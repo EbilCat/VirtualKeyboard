@@ -1,0 +1,141 @@
+//*/////////////////////
+//* TODOS
+//*/////////////////////
+- Replacing of current selected Game Objects.
+- Adding of Component to current Selected Game Objects.
+- Refactor code base.
+- Unit Tests
+
+
+//*/////////////////////
+//* Version 0.2.2
+//*/////////////////////
+- Added support for filtering by Enum types.
+
+
+//*/////////////////////
+//* Version 0.2.1
+//*/////////////////////
+- Added support for replacement of components.
+- Added support for replacement of values within structs.
+- Refactoring.
+
+
+//*/////////////////////
+//* Version 0.2.0
+//*/////////////////////
+- Renamed project as "HierarchyMaster".
+- "Remove Component" now works on "<null>" components. (Thanks to asset "Maintainer").
+
+
+//*/////////////////////
+//* Version 0.1.2
+//*/////////////////////
+- Filtering with "<null>" in the search field will select GameObjects with Missing Components.
+- "List Components" will now properly list Missing Components instead of throwing an exception.
+
+
+//*/////////////////////
+//* Version 0.1.1
+//*/////////////////////
+- "IsNull" filter now differentiates between non-existant field and an actual "null" field.
+
+
+//*/////////////////////
+//* Version 0.1.0
+//*/////////////////////
+- Added support for "IList" types.
+- Added filtering on elements within an "IList".
+- Added replacement on elements within an "IList".
+
+
+//*/////////////////////
+//* Version 0.0.9
+//*/////////////////////
+- Now able to add Child Objects to current Selected Game Objects.
+- Also able to instantiate Prefabs as children of Selected GameObjects.
+
+
+//*/////////////////////
+//* Version 0.0.8
+//*/////////////////////
+- Implemented destruction of Component on current Selected Game Objects.
+- Edited the element layout within panels so the entire tool takes less space.
+
+
+//*/////////////////////
+//* Version 0.0.7
+//*/////////////////////
+- Added ability to replace field values. Support for both value-types and objects.
+- Removed Regex Search. Integrated as part of Component Filtering.
+
+
+//*/////////////////////
+//* Version 0.0.6b
+//*/////////////////////
+- BUG FIX: Fixed null exception when selecting a new scene object when "Selection Step Through" index is more than 0.
+
+
+//*/////////////////////
+//* Version 0.0.6
+//*/////////////////////
+- Selection step-through now displays the name of GameObject currently pinged.
+- Added new functions to "Util" class for setting values on reflected fields/objects.
+
+
+//*/////////////////////
+//* Version 0.0.5b
+//*/////////////////////
+- BUG FIX: Scene wide search should now include non-active game objects in its search.
+- BUG FIX: "Shift + Return" should activate on all "Component Filter" fields now.
+
+//*/////////////////////
+//* Version 0.0.5
+//*/////////////////////
+- Colored menus. Just for the hell of it.
+- Added "Shift + Return" shortcut key for executing filters depending on Control selected.
+- Added "Escape" shortcut key for clearing all selected objects.
+
+
+//*/////////////////////
+//* Version 0.0.4
+//*/////////////////////
+- Implemented indicator to show current search/filter scope.
+- "ExpectedResult" field is now hidden if evaluator selected is "IsNull" or "NotNull".
+- Added a button to clear all currently selected objects called "Clear Selection".
+- Moved "Child Filter" toggle to top of UI next to "Clear Selection" button.
+- Avoids reflecting values for "mesh", "material" and "materials" to avoid creating scene-instances of said values.
+
+
+//*/////////////////////
+//* Version 0.0.3
+//*/////////////////////
+- Added scrollbars to the menu. 
+- Added button (called "Reflect") to query public fields/properties of current item in "Component Filter" textbox.
+- Comparison Operators (eg >=, <=, ==, IsNull) are now selectable via a dropdown instead of freeform typing.
+
+
+//*/////////////////////
+//* Version 0.0.2
+//*/////////////////////
+- Cleaned up UI a bit so its a bit more presentable.
+- Add text for "Search Children" check boxes.
+
+
+//*/////////////////////
+//* Version 0.0.1
+//*/////////////////////
+- Very messy implementation but features should be functional.
+
+
+//*/////////////////////
+//* Notes
+//*/////////////////////
+About:
+- This package was created to simplify the management of very complex project hierarchies.
+
+Features:
+    - Selection of GameObjects by matching their names against a Regex query.
+    - Selection of GameObjects based on attached components.
+    - Selection of GameObjects based on values within their components.
+    - All the above operations are scoped by the GameObjects selected prior to executing the operation.
